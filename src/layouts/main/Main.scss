@@ -1,0 +1,23 @@
+@import '../../scss/variables.scss';
+
+
+.main__section{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me{
+    background-color: $main-bg-gray;
+}
+
+#projects{
+    background-color: $main-bg-white;
+}
+
+#contact{
+    background-color: $main-bg-gray;
+    
+}
