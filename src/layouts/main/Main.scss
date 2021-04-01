@@ -6,18 +6,190 @@
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 #about-me{
     background-color: $main-bg-gray;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .about-me__wrapper{
+        display: flex;
+        width:90%;
+        max-width: 1000px;
+    }
+
+    .about-me__text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        min-height: 100%;
+        width:70%;
+        padding:2em;
+
+        h1{
+            font-size: 48px;
+            font-weight: 700;
+            color:$font-color-white;
+            margin-bottom:.7em;
+        }
+
+        h2{
+            font-size: 23px;
+            color: $font-color-white-light;
+            font-weight: 300;
+            margin-bottom:.4em;
+            max-width: 35ch;
+        }
+
+        button{
+            cursor: pointer;
+            padding:.8em 1.5em;
+            border-radius: 30px;
+            border:none;
+            margin-top: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(45, 81, 148);
+            border:5px solid rgb(45, 81, 148);
+            color:$font-color-white;
+            font-size: 21px;
+            font-weight: 700;
+            transition:.25s;
+            
+            &:hover{
+                transition:.25s;
+                background-color: $main-bg-gray;
+                color:$font-color-white;
+            }
+        }
+    }
+
+    .about-me__picture{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+        width:30%;
+        padding:2em;
+
+
+        .picture{
+            background-image: url('../../images/kacperkurekzdjecie.jpg');
+            min-width: 270px;
+            background-position: center;
+            background-size: 100%;
+            min-height: 270px;
+            border-radius: 50%;
+            box-shadow:0 2px 15px rgba(0,0,0,.7);
+            border:15px solid $main-bg-gray-dark;
+            }
+        }
+
+    }
 
 #projects{
+    position: relative;
+    align-items: flex-start;
     background-color: $main-bg-white;
+
+    .projects__wrapper{
+        margin-top: 5em;
+        width:90%;
+        max-width:1300px;
+    }
+
+    .projects__main-title{
+        display: flex;
+        justify-content: center;
+        font-size: 34px;
+        color: $font-color-black-light;
+        width:100%;
+        margin-bottom: 3em;
+    }
 }
 
 #contact{
+    position: relative;
     background-color: $main-bg-gray;
+    font-family: 'Work Sans', sans-serif !important;
+    min-height: 75vh;
     
+
+    .contact__title{
+        font-size: 48px;
+        margin-top: -3.5em;    
+        color: $font-color-white;
+    }
+
+    .contact__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:90%;
+
+    }
+
+    .contact__items-cnt{
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5em;
+        padding:2em 0em;
+        width:100%;
+        max-width: 700px;
+
+    }
+
+    .contact__item-number{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+        padding: 1.5em;
+        color: $font-color-white;
+        width:300px;
+        max-height: 75px;
+        border-radius: 4px;
+        font-size: 22px;
+        border: 5px solid $font-color-black-light;
+        box-shadow: 0 0px 18px rgba(0,0,0,.4);
+        background-color: $main-bg-gray-dark;
+
+        .icon{
+            display: flex;
+            justify-content: center;
+            margin-left:auto;
+            font-size: 38px;
+        }
+    }
+
+    .contact__item-email{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:300px;
+        max-height: 75px;
+        padding: 1.2em;
+        color: $font-color-white;
+        font-weight: 400;
+        font-size: 13px;
+        border-radius: 4px;
+        border: 5px solid $font-color-black-light;
+        box-shadow: 0 0px 18px rgba(0,0,0,.4);
+        background-color: $main-bg-gray-dark;
+
+        .icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left:auto;
+            font-size: 24px;
+        }
+    }
+
+
 }

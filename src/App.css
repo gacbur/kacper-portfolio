@@ -6,19 +6,19 @@
 
 .app{
   position:relative;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   min-height: 100vh;
 
 }
 
 .app__content{
-  padding-bottom: 5em;
+  padding-bottom: 1em;
 }
 
 
 .app__footer{
   position: absolute;
   bottom:0;
-  height: 5em;
+  height: 1em;
   width:100%;
 }

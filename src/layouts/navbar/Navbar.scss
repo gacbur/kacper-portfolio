@@ -2,6 +2,59 @@
 
 .navbar{
     background-color: $main-bg-gray;
-    padding:3em 1em;
+    z-index: 1000;
+    box-shadow: 0 2px 28px rgba(255, 255, 255, .1);
+    padding:1.5em 1.5em;
+    display: flex;
+    position: fixed;
+    left:0px;
+    top:0px;
+    right:0px;
+    justify-content: center;
     color: $font-color-white;
+
+    &__items-cnt{
+        display: flex;
+        align-items: center;
+        width:95%;
+        max-width:1300px;
+    }
+
+    &__logo{
+        flex-grow: 1;
+        font-size: 17px;
+
+        a{
+            text-decoration: none;
+            color:white;
+
+            h2{
+                color:$font-main;
+                font-weight: 300;
+            }
+        }
+    }
+
+    &__links{
+        display: flex;
+
+        li{
+            margin:0em 1.4em;
+            list-style-type: none;
+
+            a{
+                text-decoration: none;
+                color: $font-color-white;
+                font-size: 18px;
+                transition:.25s;
+                
+                &:hover{
+                    color: $font-color-white-light;
+                    transition:.25s;
+                }
+            }
+
+    
+        }
+    }
 }
