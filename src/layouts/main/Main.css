@@ -30,6 +30,19 @@
   max-width: 1000px;
 }
 
+@media all and (max-width: 900px) {
+  #about-me .about-me__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
 #about-me .about-me__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,6 +60,12 @@
   min-height: 100%;
   width: 70%;
   padding: 2em;
+}
+
+@media all and (max-width: 900px) {
+  #about-me .about-me__text {
+    width: 100%;
+  }
 }
 
 #about-me .about-me__text h1 {
@@ -81,6 +100,8 @@
           align-items: center;
   background-color: #2d5194;
   border: 5px solid #2d5194;
+  -webkit-box-shadow: 0 0px 12px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0px 12px rgba(0, 0, 0, 0.4);
   color: white;
   font-size: 21px;
   font-weight: 700;
@@ -93,6 +114,22 @@
   transition: .25s;
   background-color: #252525;
   color: white;
+}
+
+@media all and (max-width: 650px) {
+  #about-me .about-me__text h1 {
+    font-size: 34px;
+  }
+  #about-me .about-me__text h2 {
+    font-size: 17px;
+    padding-bottom: 8em;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #about-me .about-me__text button {
+    display: none;
+  }
 }
 
 #about-me .about-me__picture {
@@ -122,6 +159,18 @@
   border: 15px solid #202020;
 }
 
+@media all and (max-width: 650px) {
+  .about-me__picture {
+    margin-top: 6em;
+    margin-bottom: -1em;
+  }
+  .about-me__picture .picture {
+    max-width: 260px;
+    max-height: 260px;
+    border: 12px solid #202020;
+  }
+}
+
 #projects {
   position: relative;
   -webkit-box-align: start;
@@ -131,7 +180,7 @@
 }
 
 #projects .projects__wrapper {
-  margin-top: 5em;
+  margin-top: 4em;
   width: 90%;
   max-width: 1300px;
 }
@@ -146,7 +195,15 @@
   font-size: 34px;
   color: #2e2e2e;
   width: 100%;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
+}
+
+@media all and (max-width: 650px) {
+  #projects .projects__wrapper {
+    margin-bottom: -10em;
+    width: 90%;
+    max-width: 1300px;
+  }
 }
 
 #contact {
@@ -192,6 +249,18 @@
   max-width: 700px;
 }
 
+@media all and (max-width: 900px) {
+  #contact .contact__items-cnt {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 #contact .contact__item-number {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,6 +282,21 @@
   -webkit-box-shadow: 0 0px 18px rgba(0, 0, 0, 0.4);
           box-shadow: 0 0px 18px rgba(0, 0, 0, 0.4);
   background-color: #202020;
+}
+
+@media all and (max-width: 900px) {
+  #contact .contact__item-number {
+    margin-right: 0px;
+    margin-bottom: 2em;
+  }
+}
+
+#contact .contact__item-number h1 span {
+  margin: 0em .1em;
+}
+
+#contact .contact__item-number h1 span:last-child {
+  margin-right: .5em;
 }
 
 #contact .contact__item-number .icon {
@@ -261,5 +345,24 @@
           align-items: center;
   margin-left: auto;
   font-size: 24px;
+}
+
+@media all and (max-width: 650px) {
+  #contact .contact__title {
+    font-size: 33px;
+    margin-top: -1.5em;
+    color: white;
+  }
+}
+
+@media all and (max-width: 430px) {
+  #contact {
+    min-height: 100vh;
+  }
+  #contact .contact__title {
+    font-size: 22px;
+    margin-top: -3.5em;
+    color: white;
+  }
 }
 /*# sourceMappingURL=Main.css.map */

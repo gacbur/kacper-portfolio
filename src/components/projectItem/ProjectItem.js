@@ -39,11 +39,12 @@ const ProjectItem = ({ item }) => {
                     </a>
                 </div>
                 <div className="project-item-icons-cnt">
-                    {icons.map(item => {
-                        return <img src={item} alt="icon" />
+                    {icons.map((item, index) => {
+                        return <img src={item} key={index} alt="icon" />
                     })}
                 </div>
             </div>
+            {name !== "Movies viewer" && <div className="project-item_divider"></div>}
         </div>
     )
 }

@@ -18,7 +18,7 @@ const Main = () => {
                             Hej, mam na imię Kacper.
                         </h1>
                         <h2>
-                            Jestem aspirującym web developerem, samoukiem z pasją do programowania zainteresowanym technologiami frontendowymi.
+                            Jestem samoukiem z pasją do programowania, interesuję się technologiami frontendowymi i aspiruję do zostania web developerem.
                         </h2>
                         <button>
                             Moje Projekty

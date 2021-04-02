@@ -10,6 +10,18 @@
   font-family: 'Roboto', sans-serif;
 }
 
+@media all and (max-width: 1000px) {
+  .project-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .project-item__image-card-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,9 +47,36 @@
   overflow: hidden;
   height: 280px;
   max-width: 460px;
-  min-width: 460px;
   -webkit-transition: .25s;
   transition: .25s;
+}
+
+@media all and (max-width: 1000px) {
+  .project-item__image-card {
+    height: 330px;
+    max-width: 550px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .project-item__image-card {
+    height: 270px;
+    max-width: 400px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .project-item__image-card {
+    height: 230px;
+    max-width: 330px;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .project-item__image-card {
+    height: 200px;
+    max-width: 290px;
+  }
 }
 
 .project-item__image-card img {
@@ -54,7 +93,34 @@
   height: 280px;
   margin-left: 2.2em;
   max-width: 460px;
-  min-width: 460px;
+}
+
+@media all and (max-width: 1000px) {
+  .project-item__text-card {
+    height: 330px;
+    max-width: 550px;
+    margin-left: 0em;
+    margin-top: 2em;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .project-item__text-card {
+    max-width: 400px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .project-item__text-card {
+    max-width: 330px;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .project-item__text-card {
+    min-height: 350px;
+    max-width: 290px;
+  }
 }
 
 .project-item__text-card h1 {
@@ -166,5 +232,14 @@
 .project-item__text-card .project-item-icons-cnt img {
   width: 26px;
   margin: 0em .2em;
+}
+
+@media all and (max-width: 1000px) {
+  .project-item .project-item_divider {
+    border: 1px solid #b8b8b8;
+    border-radius: 50em;
+    margin-top: 3.5em;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=ProjectItem.css.map */
