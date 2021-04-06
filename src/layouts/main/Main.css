@@ -23,6 +23,7 @@
 }
 
 #about-me .about-me__wrapper {
+  margin-top: -5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,6 +44,13 @@
   }
 }
 
+@media all and (max-width: 420px) {
+  #about-me .about-me__wrapper {
+    margin-top: 1em;
+    width: 100%;
+  }
+}
+
 #about-me .about-me__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,9 +65,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 100%;
+  min-height: 90%;
   width: 70%;
-  padding: 2em;
+  padding: 3em;
 }
 
 @media all and (max-width: 900px) {
@@ -122,7 +130,6 @@
   }
   #about-me .about-me__text h2 {
     font-size: 17px;
-    padding-bottom: 8em;
   }
 }
 
@@ -159,9 +166,15 @@
   border: 15px solid #202020;
 }
 
+@media all and (max-width: 900px) {
+  .about-me__picture {
+    margin-top: 10em;
+  }
+}
+
 @media all and (max-width: 650px) {
   .about-me__picture {
-    margin-top: 6em;
+    margin-top: 9em;
     margin-bottom: -1em;
   }
   .about-me__picture .picture {

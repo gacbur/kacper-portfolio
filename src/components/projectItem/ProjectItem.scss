@@ -48,7 +48,7 @@
             }
 
             @media all and(max-width:360px){
-                height: 200px;
+                height: 180px;
                 max-width: 290px;
             }
             
@@ -68,7 +68,7 @@
         max-width:460px;
 
         @media all and(max-width:1000px){
-            height: 330px;
+            height: 310px;
             max-width: 550px;
             margin-left: 0em;
             margin-top: 2em;
@@ -79,17 +79,17 @@
         }
 
         @media all and(max-width:500px){
-            max-width: 330px;
+            max-width: 345px;
         }
 
         @media all and(max-width:360px){
             min-height: 350px;
-            max-width: 290px;
+            max-width: 300px;
         }
 
         h1{
             color: $font-color-white;
-            font-weight: 400;
+            font-weight: 900;
             padding:.3em;
             font-size: 18px;
             margin-bottom:.5em;
@@ -99,6 +99,8 @@
         p{
             color: $font-color-white-light;
             font-size: 14px;
+            min-height: 100px;
+            line-break: anywhere;
         }
 
         .project-item__btns-cnt{
@@ -167,6 +169,7 @@
         }
 
         .project-item-icons-cnt{
+            position: relative;
             display: flex;
             justify-content: center;
             padding:.3em;
@@ -175,8 +178,10 @@
             margin-top: 1em;
 
             img{
+
                 width:26px;
                 margin:0em .2em;
+                padding-top: max-content;
             }
 
         }

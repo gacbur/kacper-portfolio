@@ -3,12 +3,24 @@ import React from 'react'
 import ProjectsList from '../../components/projectsList/ProjectsList'
 import ContactShapeLayers from '../../components/contactShapelayers/ContactShapeLayers'
 
+import { scroller, Element } from 'react-scroll'
+
 import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai'
 
 import "./Main.css"
 
 
 const Main = () => {
+
+    const handleScrollToProjects = () => {
+        scroller.scrollTo('scroll-to-projects', {
+            duration: 800,
+            delay: 0,
+            offset: -70,
+            smooth: 'easeInOutQuart'
+        })
+    }
+
     return (
         <main className="main">
             <section className="main__section" id="about-me">
@@ -18,23 +30,25 @@ const Main = () => {
                             Hej, mam na imię Kacper.
                         </h1>
                         <h2>
-                            Jestem samoukiem z pasją do programowania, interesuję się technologiami frontendowymi i aspiruję do zostania web developerem.
+                            Jestem samoukiem z pasją do programowania, interesuję się frontendem i aspiruję do zostania web developerem.
                         </h2>
-                        <button>
-                            Moje Projekty
-                        </button>
+                        <button
+                            onClick={() => handleScrollToProjects()}
+                        >
+                            Moje projekty
+                            </button>
                     </div>
                     <div className="about-me__picture">
                         <div className="picture"></div>
                     </div>
                 </div>
             </section>
-            <section className="main__section" id="projects">
+            <Element name="scroll-to-projects" className="main__section" id="projects">
                 <div className="projects__wrapper">
                     <h1 className="projects__main-title">Projekty</h1>
                     <ProjectsList />
                 </div>
-            </section>
+            </Element>
             <section className="main__section" id="contact">
                 <div className="contact__wrapper">
                     <h1 className="contact__title">

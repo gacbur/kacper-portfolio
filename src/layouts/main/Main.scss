@@ -1,6 +1,5 @@
 @import '../../scss/variables.scss';
 
-
 .main__section{
     width:100%;
     min-height: 100vh;
@@ -15,6 +14,7 @@
     align-items: center;
 
     .about-me__wrapper{
+        margin-top: -5em;
         display: flex;
         width:90%;
         max-width: 1000px;
@@ -24,6 +24,11 @@
             align-items: center;
             width:100%;
         }
+
+        @media all and(max-width:420px){
+            margin-top: 1em;
+            width:100%;
+        }
     }
 
     .about-me__text{
@@ -31,9 +36,9 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        min-height: 100%;
+        min-height: 90%;
         width:70%;
-        padding:2em;
+        padding:3em;
 
         @media all and(max-width:900px){
             width:100%;
@@ -85,7 +90,6 @@
     
             h2{
                 font-size: 17px;
-                padding-bottom: 8em;
             }
         }
 
@@ -93,6 +97,10 @@
             button{
                 display: none;
             }
+        }
+
+        @media all and(max-width:430px){
+            
         }
     }
 
@@ -117,10 +125,16 @@
         }
     }
 
+    @media all and(max-width:900px){
+        .about-me__picture{
+            margin-top:10em;
+        }
+    }
+
     @media all and(max-width:650px){
 
         .about-me__picture{
-            margin-top:6em;
+            margin-top:9em;
             margin-bottom: -1em;
     
             .picture{

@@ -17,12 +17,8 @@ const ProjectItem = ({ item }) => {
                 </div>
             </a>
             <div className="project-item__text-card">
-                <h1 className="title">
-                    {name}
-                </h1>
-                <p>
-                    {description}
-                </p>
+                <h1 className="title">{name}</h1>
+                <p>{String(description)}</p>
                 <div className="project-item__btns-cnt">
                     <a href={githubLink}>
                         <button className="github-btn">

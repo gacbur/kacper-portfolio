@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 
+import { Link } from 'react-scroll'
+
 import { AiFillGithub } from 'react-icons/ai'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { VscChromeClose } from 'react-icons/vsc'
+
 
 import "./Navbar.css"
 
@@ -21,22 +24,43 @@ const Navbar = () => {
                     </div>
                     <ul className="navbar__links">
                         <li>
-                            <a href="#about-me">
+                            <Link
+                                className="link"
+                                activeClass="active"
+                                to="about-me"
+                                smooth={true}
+                                offset={-70}
+                                duration={800}
+                            >
                                 O mnie
-                        </a>
+                                </Link>
                         </li>
                         <li>
-                            <a href="#projects">
+                            <Link
+                                className="link"
+                                activeClass="active"
+                                to="projects"
+                                smooth={true}
+                                offset={-70}
+                                duration={800}
+                            >
                                 Projekty
-                        </a>
+                                </Link>
                         </li>
                         <li>
-                            <a href="#contact">
+                            <Link
+                                className="link"
+                                activeClass="active"
+                                to="contact"
+                                smooth={true}
+                                offset={-70}
+                                duration={800}
+                            >
                                 Kontakt
-                        </a>
+                                </Link>
                         </li>
                         <li>
-                            <a href="https://github.com/gacbur" className="github-link">
+                            <a href="https://github.com/gacbur" className="link">
                                 <AiFillGithub className="icon" />
                             </a>
                         </li>
@@ -50,36 +74,62 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            <div className={`top-drawer ${showTopDrawer ? 'hide' : ''}`}>
+            <div className={`top-drawer ${showTopDrawer ? 'show' : ''}`}>
                 <ul className="top-drawer__links">
                     <li>
-                        <a href="#about-me">
+                        <Link
+                            className="link"
+                            onClick={() => setShowTopDrawer(false)}
+                            activeClass="active"
+                            to="about-me"
+                            smooth={true}
+                            offset={-70}
+                            duration={800}
+                        >
                             O mnie
-                        </a>
+                                </Link>
                     </li>
                     <li>
-                        <a href="#projects">
+                        <Link
+                            className="link"
+                            onClick={() => setShowTopDrawer(false)}
+                            activeClass="active"
+                            to="projects"
+                            smooth={true}
+                            offset={-70}
+                            duration={800}
+                        >
                             Projekty
-                        </a>
+                                </Link>
                     </li>
                     <li>
-                        <a href="#contact">
+                        <Link
+                            className="link"
+                            onClick={() => setShowTopDrawer(false)}
+                            activeClass="active"
+                            to="contact"
+                            smooth={true}
+                            offset={-70}
+                            duration={800}
+                        >
                             Kontakt
-                        </a>
+                                </Link>
                     </li>
                     <li>
-                        <a href="https://github.com/gacbur" className="github-link">
+                        <a href="https://github.com/gacbur" className="link">
                             <AiFillGithub className="icon" />
                         </a>
                     </li>
                 </ul>
             </div>
-            {showTopDrawer &&
+            {
+                showTopDrawer &&
                 <div
                     onClick={() => setShowTopDrawer(false)}
                     className="backdrop">
 
-                </div>}
+                </div>
+            }
         </>
     )
 }
