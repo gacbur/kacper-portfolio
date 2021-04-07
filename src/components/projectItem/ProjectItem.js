@@ -4,10 +4,11 @@ import { AiFillGithub } from 'react-icons/ai'
 
 import './ProjectItem.css'
 
-const ProjectItem = ({ item }) => {
+const ProjectItem = ({ item, descriptionn }) => {
 
     const { name, description, githubLink, liveServerLink, image, icons } = item
 
+    console.log(item.id)
 
     return (
         <div className="project-item">
@@ -18,7 +19,7 @@ const ProjectItem = ({ item }) => {
             </a>
             <div className="project-item__text-card">
                 <h1 className="title">{name}</h1>
-                <p>{String(description)}</p>
+                <p>{description}</p>
                 <div className="project-item__btns-cnt">
                     <a href={githubLink}>
                         <button className="github-btn">

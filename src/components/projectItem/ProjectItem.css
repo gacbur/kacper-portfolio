@@ -85,12 +85,13 @@
 }
 
 .project-item__text-card {
+  position: relative;
   border-radius: 10px;
   padding: 1em 1.2em;
   background-color: #252525;
   -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
           box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
-  height: 280px;
+  height: 900px;
   margin-left: 2.2em;
   max-width: 460px;
 }
@@ -112,6 +113,7 @@
 
 @media all and (max-width: 500px) {
   .project-item__text-card {
+    min-height: 330px;
     max-width: 345px;
   }
 }
@@ -136,7 +138,6 @@
   color: #b8b8b8;
   font-size: 14px;
   min-height: 100px;
-  line-break: anywhere;
 }
 
 .project-item__text-card .project-item__btns-cnt {
@@ -219,21 +220,23 @@
 }
 
 .project-item__text-card .project-item-icons-cnt {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: .3em;
+  padding: 1em;
   border-top: 1px solid #2e2e2e;
   width: 100%;
   margin-top: 1em;
 }
 
 .project-item__text-card .project-item-icons-cnt img {
-  width: 26px;
+  width: 30px;
   margin: 0em .2em;
   padding-top: max-content;
 }

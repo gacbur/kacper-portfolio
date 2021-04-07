@@ -59,11 +59,12 @@
         }
 
     &__text-card{
+        position: relative;
         border-radius: 10px;
         padding:1em 1.2em;
         background-color: $main-bg-gray;
         box-shadow: 0 2px 12px rgba(0,0,0,.4);
-        height: 280px;
+        height: 900px;
         margin-left: 2.2em;
         max-width:460px;
 
@@ -79,6 +80,7 @@
         }
 
         @media all and(max-width:500px){
+            min-height: 330px;
             max-width: 345px;
         }
 
@@ -87,6 +89,7 @@
             max-width: 300px;
         }
 
+        
         h1{
             color: $font-color-white;
             font-weight: 900;
@@ -100,7 +103,6 @@
             color: $font-color-white-light;
             font-size: 14px;
             min-height: 100px;
-            line-break: anywhere;
         }
 
         .project-item__btns-cnt{
@@ -169,17 +171,18 @@
         }
 
         .project-item-icons-cnt{
-            position: relative;
+            position: absolute;
+            bottom:0;
+            left:0;
             display: flex;
             justify-content: center;
-            padding:.3em;
+            padding:1em;
             border-top: 1px solid $font-color-black-light;
             width:100%;
             margin-top: 1em;
 
             img{
-
-                width:26px;
+                width:30px;
                 margin:0em .2em;
                 padding-top: max-content;
             }
