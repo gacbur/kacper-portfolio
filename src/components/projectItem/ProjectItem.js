@@ -4,11 +4,9 @@ import { AiFillGithub } from 'react-icons/ai'
 
 import './ProjectItem.css'
 
-const ProjectItem = ({ item, descriptionn }) => {
+const ProjectItem = ({ item }) => {
 
     const { name, description, githubLink, liveServerLink, image, icons } = item
-
-    console.log(item.id)
 
     return (
         <div className="project-item">
