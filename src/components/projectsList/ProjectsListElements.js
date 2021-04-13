@@ -34,6 +34,6 @@ export const projects = [
         githubLink: 'https://github.com/gacbur/mern-movies-app',
         liveServerLink: 'https://moviesviewer.vercel.app/',
         image: "https://user-images.githubusercontent.com/46655309/112980528-4673a400-915a-11eb-9a48-0f6fc05f0b4f.JPG",
-        icons: ['assets/dev-icons/javascript.png', 'assets/dev-icons/html.png', 'assets/dev-icons/css.png', 'assets/dev-icons/material-ui.png', 'assets/dev-icons/redux.png', 'assets/dev-icons/mongodb.png', 'assets/dev-icons/nodejs.png']
+        icons: ['assets/dev-icons/javascript.png', 'assets/dev-icons/html.png', 'assets/dev-icons/css.png', 'assets/dev-icons/material-ui.png', 'assets/dev-icons/redux.png']
     }
 ]
