@@ -21,7 +21,7 @@ export const projects = [
     //     icons: ['assets/dev-icons/typescript.png', 'assets/dev-icons/html.png', 'assets/dev-icons/sass.png', 'assets/dev-icons/redux.png']
     // },
     {
-        id: 3,
+        id: 2,
         name: "Movies App",
         descriptionPL: "Movies App umożliwia wyszukiwanie filmów, każdy film zawiera: opis, galerie zdjęć, średnią ocen, aktorów, obsadę i inne informacje. Filmy można dodawać do ulubionych i w ten sposób prowadzić kolekcję ulubionych filmów. Każdy film na dole strony proponuje tytuły, które mogą się spodobać, biorąc pod uwagę obecnie przeglądany film.",
         descriptionENG: "Movies App allows you to search for movies, each movie contains: description, average ratings, actors, cast and other information. You can add videos to your favorites and keep a collection of your favorite videos. Each video at the bottom of the page suggests titles that you might like, considering the video you're currently viewing.",
