@@ -10,20 +10,59 @@
 }
 
 #about-me {
+  position: relative;
   background-color: #252525;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 3em;
+}
+
+#about-me .change-language {
+  position: absolute;
+  top: 150px;
+  color: white;
+  margin-bottom: 8em;
+}
+
+#about-me .change-language span {
+  font-size: 18px;
+}
+
+#about-me .change-language span button {
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  color: gray;
+  border: none;
+  background-color: #252525;
+  padding: 0em .4em;
+  margin: 0em .2em;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#about-me .change-language span button:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+#about-me .change-language span button.active {
+  color: white;
 }
 
 #about-me .about-me__wrapper {
-  margin-top: -5em;
+  margin-top: 0em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,7 +213,7 @@
 
 @media all and (max-width: 650px) {
   .about-me__picture {
-    margin-top: 9em;
+    margin-top: 10em;
     margin-bottom: -1em;
   }
   .about-me__picture .picture {
@@ -285,9 +324,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: auto;
-  padding: 1.5em;
+  padding: 1.5em .5em;
   color: white;
-  width: 300px;
   max-height: 75px;
   border-radius: 4px;
   font-size: 22px;

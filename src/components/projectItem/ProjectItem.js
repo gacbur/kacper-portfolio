@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { LanguageContext } from '../../App'
 
 import { AiFillGithub } from 'react-icons/ai'
 
@@ -6,7 +7,9 @@ import './ProjectItem.css'
 
 const ProjectItem = ({ item }) => {
 
-    const { name, description, githubLink, liveServerLink, image, icons } = item
+    const { name, descriptionPL, descriptionENG, githubLink, liveServerLink, image, icons } = item
+
+    const { language } = useContext(LanguageContext)
 
     return (
         <div className="project-item">
@@ -17,7 +20,7 @@ const ProjectItem = ({ item }) => {
             </a>
             <div className="project-item__text-card">
                 <h1 className="title">{name}</h1>
-                <p>{description}</p>
+                <p>{language === "PL" ? descriptionPL : descriptionENG}</p>
                 <div className="project-item__btns-cnt">
                     <a href={githubLink}>
                         <button className="github-btn">
@@ -29,7 +32,7 @@ const ProjectItem = ({ item }) => {
                     </a>
                     <a href={liveServerLink}>
                         <button className="preview-btn">
-                            Podgląd
+                            {language === "PL" ? 'Podgląd' : 'Live Preview'}
                         </button>
                     </a>
                 </div>

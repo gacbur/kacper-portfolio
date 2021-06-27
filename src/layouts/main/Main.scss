@@ -8,13 +8,48 @@
 }
 
 #about-me{
+    position: relative;
     background-color: $main-bg-gray;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3em;
+
+    .change-language{
+        position: absolute;
+        top:150px;
+        color: white;
+        margin-bottom: 8em;
+
+        span{
+            font-size: 18px;
+
+            button{
+                text-align: center;
+                font-size: 14px;
+                cursor: pointer;
+                color:gray;
+                border:none;
+                background-color: $main-bg-gray;
+                padding:0em .4em;
+                margin:0em .2em;
+                transition: .2s;
+            
+                &:hover{
+                    color:white;
+                    text-decoration: underline;
+                }
+
+                &.active{
+                    color:white;
+                }
+            }
+        }
+    }
 
     .about-me__wrapper{
-        margin-top: -5em;
+        margin-top:0em;
         display: flex;
         width:90%;
         max-width: 1000px;
@@ -134,7 +169,7 @@
     @media all and(max-width:650px){
 
         .about-me__picture{
-            margin-top:9em;
+            margin-top:10em;
             margin-bottom: -1em;
     
             .picture{
@@ -214,9 +249,8 @@
         align-items: center;
         justify-content: center;
         margin-right: auto;
-        padding: 1.5em;
+        padding: 1.5em .5em;
         color: $font-color-white;
-        width:300px;
         max-height: 75px;
         border-radius: 4px;
         font-size: 22px;

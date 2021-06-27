@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import { LanguageContext } from '../../App'
 
 import { Link } from 'react-scroll'
 
@@ -10,6 +11,8 @@ import { VscChromeClose } from 'react-icons/vsc'
 import "./Navbar.css"
 
 const Navbar = () => {
+
+    const { language } = useContext(LanguageContext)
 
     const [showTopDrawer, setShowTopDrawer] = useState(false)
 
@@ -32,8 +35,8 @@ const Navbar = () => {
                                 offset={-70}
                                 duration={800}
                             >
-                                O mnie
-                                </Link>
+                                {language === "PL" ? 'O mnie' : 'About me'}
+                            </Link>
                         </li>
                         <li>
                             <Link
@@ -44,8 +47,8 @@ const Navbar = () => {
                                 offset={-70}
                                 duration={800}
                             >
-                                Projekty
-                                </Link>
+                                {language === "PL" ? 'Projekty' : 'Projects'}
+                            </Link>
                         </li>
                         <li>
                             <Link
@@ -56,8 +59,8 @@ const Navbar = () => {
                                 offset={-70}
                                 duration={800}
                             >
-                                Kontakt
-                                </Link>
+                                {language === "PL" ? 'Kontakt' : 'Contact'}
+                            </Link>
                         </li>
                         <li>
                             <a href="https://github.com/gacbur" className="link">
@@ -87,7 +90,7 @@ const Navbar = () => {
                             duration={800}
                         >
                             O mnie
-                                </Link>
+                        </Link>
                     </li>
                     <li>
                         <Link
@@ -100,7 +103,7 @@ const Navbar = () => {
                             duration={800}
                         >
                             Projekty
-                                </Link>
+                        </Link>
                     </li>
                     <li>
                         <Link
@@ -113,7 +116,7 @@ const Navbar = () => {
                             duration={800}
                         >
                             Kontakt
-                                </Link>
+                        </Link>
                     </li>
                     <li>
                         <a href="https://github.com/gacbur" className="link">
