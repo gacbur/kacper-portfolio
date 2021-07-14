@@ -25,7 +25,6 @@ const Main = () => {
 
     const handleSetLanguage = (e) => {
         localStorage.setItem('language', e.target.name)
-        window.location.reload()
         setLanguage(e.target.name)
     }
 
