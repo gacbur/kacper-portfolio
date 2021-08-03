@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     width:100%;
-    margin:2em 0em;
+    margin:1.7em 0em;
     font-family: 'Roboto', sans-serif;
 
     @media all and(max-width:1100px){
@@ -25,10 +25,10 @@
         }
 
         &__image-card{
-            border-radius: 10px;
+
             box-shadow: 0 2px 12px rgba(0,0,0,.4);
             overflow: hidden;
-            height:310px;
+            height:270px;
             max-width:490px;
             transition: .25s;
 
@@ -60,11 +60,11 @@
 
     &__text-card{
         position: relative;
-        border-radius: 10px;
-        padding:1em 1.2em;
+
+        padding:.4em 1.2em 1em 1.2em;
         background-color: $main-bg-gray;
         box-shadow: 0 2px 12px rgba(0,0,0,.4);
-        height:310px;
+        height:270px;
         margin-left: 2.2em;
         max-width:490px;
 
@@ -95,7 +95,7 @@
             font-weight: 900;
             padding:.3em;
             font-size: 18px;
-            margin-bottom:.5em;
+            margin-bottom:.4em;
             border-bottom:1px solid $font-color-black-light;
         }
 
@@ -113,7 +113,7 @@
             width:100%;
             display: flex;
             justify-content: center;
-            margin-top: 1em;
+            margin-bottom: -1em;
             height:fit-content;
 
             a{
@@ -185,7 +185,7 @@
             left:0;
             display: flex;
             justify-content: center;
-            padding:1em;
+            padding:.7em;
             border-top: 1px solid $font-color-black-light;
             width:100%;
             margin-top: 1em;

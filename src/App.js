@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-
 import './App.css';
 import { useState, createContext } from 'react'
 
