@@ -1,23 +1,53 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
+
 import { LanguageContext } from '../../App'
 
+import { Wrapper } from './ProjectItemElements'
+
 import { AiFillGithub } from 'react-icons/ai'
+
+import Carousel from '../carousel/Carousel'
 
 import './ProjectItem.css'
 
 const ProjectItem = ({ item }) => {
 
-    const { name, descriptionPL, descriptionENG, githubLink, liveServerLink, image, icons } = item
+    const { name, descriptionPL, descriptionENG, githubLink, liveServerLink, images, icons } = item
 
     const { language } = useContext(LanguageContext)
 
+    const [index, setIndex] = useState(0);
+    const [width, setWidth] = useState(0);
+    const [xPosition, setXPosition] = useState(0);
+
+    const handleClickPrev = () => {
+        if (index === 0) return;
+        setIndex(index - 1);
+        setXPosition(xPosition + width);
+    };
+    const handleClicknext = () => {
+        if (index === images.length - 1) {
+            setIndex(0);
+            setXPosition(0);
+        } else {
+            setIndex(index + 1);
+            setXPosition(xPosition - width);
+        }
+    };
+
     return (
         <div className="project-item">
-            <a href={liveServerLink} className="project-item__image-card-link">
-                <div className="project-item__image-card">
-                    <img src={image} alt={name} />
-                </div>
-            </a>
+            <Wrapper >
+                <Carousel
+                    images={images}
+                    setIndex={setIndex}
+                    setWidth={setWidth}
+                    xPosition={xPosition}
+                    setXPosition={setXPosition}
+                    handleClickPrev={handleClickPrev}
+                    handleClicknext={handleClicknext}
+                />
+            </Wrapper>
             <div className="project-item__text-card">
                 <h1 className="title">{name}</h1>
                 <p>{language === "PL" ? descriptionPL : descriptionENG}</p>
