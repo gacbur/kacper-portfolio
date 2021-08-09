@@ -27,7 +27,7 @@ export const projects = [
         descriptionENG: 'Weather Forecast allows you to search for weather information for every city in the world. When you search for a specific city then this city will stay saved on the main page, there is also an option for searching the cities by getting your current localization. Weather Forecast also has an option of dark and light mode for your more pleasant user experience depending on your preferences!',
         githubLink: 'https://github.com/gacbur/WeatherApp',
         liveServerLink: 'https://weather-forecast-smoky.vercel.app/',
-        images: ["https://user-images.githubusercontent.com/46655309/127913807-4d7fd8d8-c8cb-4c03-a088-beadb5342b13.JPG", "https://user-images.githubusercontent.com/46655309/128727520-f21e3a4f-f9e1-47f4-9e29-a5028bb3bdf8.JPG", "https://user-images.githubusercontent.com/46655309/128707876-2210bd7e-3770-4c02-b4df-274398b77ec7.JPG", "https://user-images.githubusercontent.com/46655309/128707877-65200e26-46a2-4e7e-bd03-e60f36229854.JPG"],
+        images: ["https://user-images.githubusercontent.com/46655309/128762682-07d13342-fbd3-4e2b-890a-0158f68a94fd.JPG", "https://user-images.githubusercontent.com/46655309/128762685-f84cb887-1dfa-452e-b7a2-329760e1349b.JPG", "https://user-images.githubusercontent.com/46655309/128763147-1a20602c-931f-41c0-96c0-a7c8212d6737.JPG", "https://user-images.githubusercontent.com/46655309/128707876-2210bd7e-3770-4c02-b4df-274398b77ec7.JPG", "https://user-images.githubusercontent.com/46655309/128707877-65200e26-46a2-4e7e-bd03-e60f36229854.JPG"],
         icons: ['assets/dev-icons/typescript.png', 'assets/dev-icons/javascript.png', 'assets/dev-icons/html.png', 'assets/dev-icons/redux.png']
     },
     {
